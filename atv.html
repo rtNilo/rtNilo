@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação</title>
+</head>
+<style>
+
+    #legend1{
+        font-weight: bold;
+    }
+    fieldset{
+        
+        font-weight: bold;
+    }
+    #botao-salvar{
+        font-weight: bold;
+        box-shadow: 100px;
+       
+    
+    }
+    #botaopesquisar{
+        font-weight: bold;
+        box-shadow: 100px;
+       
+    
+    }
+
+    #form1{
+        border-top:8px solid #cfcfcf;
+        border-left:8px solid #cfcfcf;
+        border-right:8px solid #696969;
+        border-bottom:8px solid #696969;
+    }
+    #form2{
+        border-top:8px solid #cfcfcf;
+        border-left:8px solid #cfcfcf;
+        border-right:8px solid #696969;
+        border-bottom:8px solid #696969;
+        width: 1000px;
+    }
+    #form3{
+        border-top:8px solid #cfcfcf;
+        border-left:8px solid #cfcfcf;
+        border-right:8px solid #696969;
+        border-bottom:8px solid #696969;        
+    }
+    #form4{
+        border-top:7px solid #cfcfcf;
+        border-left:8px solid #cfcfcf;
+        border-right:8px solid #696969;
+        border-bottom:8px solid #696969;  
+    }
+    #faltasinput{
+        width: 200px;
+        
+    }
+    #tipoinput{
+        width: 800px;
+    }
+    #tipoinput2{
+        width: 700px;
+    }
+    #cargainput{
+        width: 650px;
+    }
+    #creditosinput{
+        width: 800px;
+    }
+    #nomeinput{
+        width: 800px;
+    }
+    #nomeinput2{
+        width: 700px;
+
+    }
+    #nomeinput3{
+        width: 700px;
+
+    }
+    #nomeinput4{
+        width: 800px;
+
+    }
+    #resp{
+        width: 800px;
+
+    }
+    #tcreditoinput{
+        width: 200px;
+    }
+    #profinput{
+        width: 349px;
+    }
+    option{
+        font-weight: bold;
+        text-align: center;
+    }
+    table{
+        width: 700px;
+        height: 200px;
+    }
+</style>
+<body>
+    <form id="form1">
+        <fieldset>
+            <legend id="legend1">Disciplina</legend> <br><br>
+            <label>Nome:&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; <input id="nomeinput" type="text" name="nome"></label><br><br>
+            <label>Créditos:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input id="creditosinput" type="number" name="creditos"></label><br><br>
+            <label>Tipo: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input id="tipoinput" type="text" name="tipo"> </label> <br><br>
+            <label>Carga Horária Obrigatória&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="cargainput" type="number" name="carga"></label><br><br>
+            <label>Limite de faltas&nbsp;&nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   <input id="faltasinput" type="number" name="faltas"></label><br><br> <br>
+            <label> &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; <input id="botao-salvar" type="button" value="Salvar"></label><br><br>
+        </fieldset>
+
+    </form><br><br>
+    <form id="form2">
+        <fieldset>
+            <legend>Curso</legend><br><br>
+            <label>Nome&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="nome" id="nomeinput2"></label><br><br>
+            <label>Total Crédito&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="totalcredito" id="tcreditoinput"></label><br><br>
+            Professor responsável&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="professorresponsavel">
+                <option value="Igor">Igor</option>
+                <option value="Robson">Robson</option>
+                <option value="Bruno">Bruno</option>                
+            </select><br><br>
+            <label>&nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; <input id="botao-salvar" type="button" value="Salvar"></label><br><br>
+        </fieldset>
+    </form><br><br>
+
+
+    <form id="form3">
+        <fieldset>
+            <legend>Pesquisa Especialidade</legend>
+            <label>Nome: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="nome" id="nomeinput3"></label><br><br>
+            <label>Tipo&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input id="tipoinput2" type="text" name="tipo"> </label> <br><br>
+            <input id="botaopesquisar" type="button" value="Pesquisar"><br><br> <hr> <br>
+            <table border="2";>
+            <tr>
+               <td style="text-align: center;">Nome</td>
+               <td style="text-align: center;">Tipo</td>
+               <td style="text-align: center;">Crédito</td>
+               <td style="text-align: center;">Falta</td>
+            </tr><br>
+            <tr>
+                <th> Introdução e programação </th>
+                <th>P</th>
+                <th>4</th>
+                <th>20</th>
+            </tr>
+            <tr>
+                <th>Tecnologia Web I</th>
+                <th>P</th>
+                <th>4</th>
+                <th>20</th>
+            </tr>
+            <tr>
+                <th>Estrutura de Dados</th>
+                <th>P</th>
+                <th>4</th>
+                <th>20</th>
+            </tr>
+            <tr>
+                <th>Estatística</th>
+                <th>P</th>
+                <th>4</th>
+                <th>20</th>
+            </tr>
+            <tr>
+                <th>Redes I</th>
+                <th>P</th>
+                <th>4</th>
+                <th>20</th>
+            </tr>
+            </table>
+        </fieldset>
+    </form><br><br>
+    <form id="form4">
+        <fieldset>
+            <legend>Pesquisa Curso</legend><br><br>
+            <label>Nome:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="nome" id="nomeinput4"></label><br><br>
+            <label>Resp.&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="resp" id="resp"></label><br><br>
+            <label> &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;<input id="botaopesquisar" type="button" value="Pesquisar"></label><br><br><hr><br>
+            <table border="2">
+                <tr>
+                    <td style="text-align: center;">Nome</td>
+                    <td style="text-align: center;">Créditos</td>
+                    <td style="text-align: center;">Responsável</td>
+                </tr>
+                <tr>
+                    <th>Ciência da Computação</th>
+                    <th>3000</th>
+                    <th>João</th>    
+                </tr>
+                <tr>
+                    <th>Sistema de Informação</th>
+                    <th>3000</th>
+                    <th>Maria</th>
+                </tr>
+                <tr>
+                    <th>Rede de Computadores</th>
+                    <th>3000</th>
+                    <th>João</th>   
+                </tr>
+                <tr>
+                    <th>Direito</th>
+                    <th>40000</th>
+                    <th>Maria</th>
+                </tr>
+            </table>
+
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
